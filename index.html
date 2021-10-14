@@ -388,9 +388,22 @@
                         </li>  
             </ul>
         </div>
-
+        <div class="footer-email">
+            <p class="footer-text">Подпишитесь на рассылку</p>
+            <form action="#" class="email-form">
+                <input type="email" name="email" placeholder="E-mail" class="email-input"/>
+                <button type="submit" class="btn-email">Подписаться
+                    <svg class="email-icon" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-send">
+                        </use>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </div>
     </footer>
+
+<!--MODAL WINDOW-->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="close-btn" data-modal-close>
@@ -398,13 +411,83 @@
                 <use href="./images/sprite.svg#icon-vector">
                 </use>
           </svg>
-          <!-- <svg class="modal-icon">
-                    <use href="./images/icons.svg#icon-vector">
-                    </use>
-                </svg> -->
       </button>
+
+      <form action="#" class="modal-form">
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="modal-field">
+            <label for="user-name" class="input-label">
+                Имя
+            </label>
+            <span class="input-wrapper">
+                <input 
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    class="modal-input"/>
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-name">
+                        </use>
+                    </svg>
+            </span>
+        </div>
+        <div class="modal-field">
+            <label for="user-tel" class="input-label">
+                Телефон
+            </label>
+            <span class="input-wrapper">
+                <input 
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    class="modal-input"
+                />
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-tel">
+                        </use>
+                    </svg>
+            </span>
+        </div>
+        <div class="modal-field">
+            <label for="user-mail" class="input-label">
+                Почта
+            </label>
+            <span class="input-wrapper">
+                <input 
+                    type="email"
+                    name="user-mail"
+                    id="user-mail"
+                    class="modal-input" />
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-emeil" >
+                        </use>
+                    </svg>
+            </span>
+        </div>
+        <div class="modal-field">
+            <label for="user-text" class="input-label">
+                Комментарий
+            </label>
+        <textarea 
+            name="user-text"
+            id="user-text"
+            class="modal-text-input"
+            placeholder="Введите текст"
+            ></textarea>
+        </div>
+        <input type="checkbox" id="modal-checkbox" class="modal-checkbox visually-hidden"/>
+        <label for="modal-checkbox" class="chek-text"> <span>
+            <svg class="chek-icon" width="11" height="8">
+                <use href="./images/sprite.svg#icon-check">
+                        </use>
+            </svg>
+        </span> Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></label>
+        <button type="submit" class="form-btn">Отправить</button>
+      </form>
+
     </div>
 </div>
+
 <script src="./js/modal.js"></script>
 </body>
 </html>
