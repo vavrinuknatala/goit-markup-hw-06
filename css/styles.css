@@ -470,7 +470,6 @@ body {
 .footer-conteiner {
   display: flex;
   align-items: baseline;
-  padding-left: 0;
 }
 .footer-logo {
   display: flex;
@@ -566,7 +565,7 @@ body {
   background-color: var(--color-btn);
 }
 .footer-email {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .btn-email {
   background-color: var(--color-btn);
@@ -575,7 +574,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   /* identical to box height, or 187% */
   display: inline-block;
@@ -604,7 +603,7 @@ body {
   font-size: 16px;
   line-height: 1, 25;
   color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
+  padding-left: 16px; 
 }
 .email-icon {
   fill: #ffffff;
@@ -777,11 +776,15 @@ body {
   cursor: pointer;
 }
 .close-btn-icon {
-  width: 11px;
+  width: 11px;  
   height: 11px;
-  fill: #000;
-}
+  }
 
+.close-btn:hover .close-btn-icon,
+.close-btn:focus .close-btn-icon
+{
+   fill: var(--accent-color);
+}
 .modal-title {
   font-family: Roboto;
   font-style: normal;
@@ -856,6 +859,7 @@ body {
   height: 50px;
   background-color: var(--color-btn);
   color: var(--color-title);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.875;
   display: flex;
@@ -873,8 +877,9 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-top: 20px;
   display: flex;
+  margin-top: 20px;
+  justify-content: center;
 }
 .chek-text span {
   width: 15px;
@@ -885,6 +890,10 @@ body {
   margin-right: 8px;
   justify-content: center;
   align-items: center;
+ 
+}
+.chek-text-a{
+  margin-left: 5px;
 }
 .modal-checkbox:checked + .chek-text span {
   background-color: var(--accent-color);
